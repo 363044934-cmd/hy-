@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dirt Bike World</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3em;
+      background: rgba(0,0,0,0.6);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #222;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background: #ff6600;
+    }
+    .container {
+      padding: 20px;
+    }
+    .bikes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #1c1c1c;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 10px;
+    }
+    .card p {
+      margin: 10px;
+      font-size: 0.9em;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #222;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Dirt Bike World</h1>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Bikes</a>
+  <a href="#">Gallery</a>
+  <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+  <h2>Top Dirt Bikes</h2>
+  <div class="bikes">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1593055357420-7e4b8b3b1f6f" alt="Bike 1">
+      <h3>KTM 450 SX-F</h3>
+      <p>Powerful motocross bike with excellent performance.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1611689024034-5a3d1e6d5f2f" alt="Bike 2">
+      <h3>Yamaha YZ250F</h3>
+      <p>Lightweight and agile bike perfect for racing.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1601042879364-f3947d3f9c16" alt="Bike 3">
+      <h3>Honda CRF450R</h3>
+      <p>Reliable and fast dirt bike loved by professionals.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Dirt Bike World | Built for riders</p>
+</footer>
+
+</body>
+</html>
